@@ -1,0 +1,129 @@
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+li{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card{
+    background-color: hsl(244, 38%, 16%);
+    width: 70%;
+    /* height: 60vh; */
+    margin: 110px auto;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+}
+
+.content{
+    width: 50%;
+    color: hsl(0, 0%, 100%);
+    padding: 44px;
+    margin-top: 15px;
+}
+
+.content p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.content h2{
+    margin-top: 10px;
+}
+
+.content b{
+    color: rgb(170, 92, 219);
+}
+
+.image{
+    display: flex;
+    width: 60%;
+    background-image: url('assets/image-header-desktop.jpg');
+    background-size: cover;
+    position: relative;  
+}
+
+.image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(170, 92, 219);
+    opacity: 0.5;
+}
+
+li {
+    list-style: none;  
+}
+
+.end{
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+}
+
+.end li{
+    font-size:smaller;
+}
+
+ul{
+    padding: 0;
+}
+
+.end p{
+    font-size: smaller;
+}
+
+@media (max-width:425px) {
+
+    .card{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .image
+    {
+        width: 100%;
+        height:45vh;
+    }
+
+    .end
+    {
+        flex-direction: column;
+    }
+
+    .content{
+        text-align: center;
+        width: 60%;
+        padding-left: 60px;
+    }
+
+    .content{
+        line-height: 1.4;
+    }
+
+    .end{
+        gap: 0px;
+    }
+
+}
+
